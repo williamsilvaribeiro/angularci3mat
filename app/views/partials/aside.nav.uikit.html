@@ -1,0 +1,91 @@
+<nav ui-nav>
+  <ul class="nav">
+    <li class="nav-header m-v-sm hidden-folded">
+      Luziania Virtual
+    </li>
+    
+    <li ui-sref-active="active">
+      <a md-ink-ripple>
+        <span class="pull-right text-muted">
+          <i class="fa fa-caret-down"></i>
+        </span>
+        <i class="pull-right up"><b class="badge no-bg">2</b></i>
+        <i class="icon mdi-action-settings-input-svideo i-20"></i>
+        <span class="font-normal">HOME</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li ui-sref-active="active">
+          <a md-ink-ripple ui-sref="app.dashboard">Painel</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li ng-class="{active:$state.includes('ui.component')}">
+      <a md-ink-ripple>
+        <span class="pull-right text-muted">
+          <i class="fa fa-caret-down"></i>
+        </span>
+        <i class="icon mdi-action-subject i-20"></i>
+        <span class="font-normal">Leidiane</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li ui-sref-active="active">
+          <a md-ink-ripple ui-sref="ui.component.uibootstrap">UI Bootstrap</a>
+        </li>
+      </ul>
+    </li>
+    <li ng-class="{active:$state.includes('ui.table')}">
+      <a md-ink-ripple>
+        <span class="pull-right text-muted">
+          <i class="fa fa-caret-down"></i>
+        </span>
+        <i class="icon mdi-editor-format-list-bulleted i-20"></i>
+        <span class="font-normal">Table</span>
+      </a>
+      <ul class="nav nav-sub">
+        
+        <li ui-sref-active="active">
+          <a md-ink-ripple ui-sref="ui.table.datatable">Datatable</a>
+        </li>
+        
+      </ul>
+    </li>
+    
+   
+    <li>
+      <a md-ink-ripple href>
+        <span class="pull-right text-muted">
+          <i class="fa fa-caret-down"></i>
+        </span>
+        <i class="icon mdi-content-sort i-20"></i>
+        <span>Menu</span>
+      </a>
+      <ul class="nav nav-sub">
+        <li><a md-ink-ripple href>Menu levels 1</a></li>
+        <li>
+          <a md-ink-ripple href>
+            <span class="pull-right text-muted">
+              <i class="fa fa-caret-down"></i>
+            </span>
+            <span class="font-normal">Menu levels 2</span>
+          </a>
+          <ul class="nav nav-sub">
+            <li>
+              <a md-ink-ripple href>Menu levels 2.1</a>
+            </li>
+            <li>
+              <a md-ink-ripple href>Menu levels 2.2</a>
+            </li>
+          </ul>          
+        </li>        
+      </ul>
+    </li>
+    <li class="b-b b m-v-sm"></li>
+    <li>
+      <a md-ink-ripple ui-toggle-class="hide, show" target="#nav, #account">
+        <span>Settings</span>
+      </a>
+    </li>
+  </ul>
+</nav>
